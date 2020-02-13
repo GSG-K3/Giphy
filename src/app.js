@@ -12,7 +12,7 @@ const request = require('request');
 
 
 app.disable('x-powered-by')
-app.set('port',3333)
+app.set('port',process.env.PORT||3333)
 
 app.use(compression())
 
