@@ -18,7 +18,7 @@ const postGif = (requ,resp,next) => {
 
 //   search = "dog";
 // return search
-const url = `http://api.giphy.com/v1/gifs/search?q=${search}&limit=4&api_key=KuE4a9CKQ46hlrVzfi5rIdB0XdS2BnYH`;
+const url = `http://api.giphy.com/v1/gifs/search?q=${search}&limit=4&api_key=${process.env.api-key}`;
 // res.send(url)
     arr.length = 0;
 
