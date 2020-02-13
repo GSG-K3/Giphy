@@ -7,12 +7,10 @@ const bodyParser = require('body-parser');
 const compression = require('compression')
 const app = express();
 
-// let url = "" ;
-// let search = "";
+
 const request = require('request');
 
-// const arr = [];
-// let link = "" ;
+
 app.disable('x-powered-by')
 app.set('port',3333)
 
@@ -25,10 +23,11 @@ app.use(express.static(path.join(__dirname,'..', 'public')));
 
 
 app.get('/gif', gif.getGif)
-// console.log(giphy.getGiphy)
+
 app.post('/gif/:name', gif.postGif)
 
-app.get('*', errors.pageNotFound)
+app.use('*', errors.pageNotFound)
+app.use(errors.serverError)
 
 
 
