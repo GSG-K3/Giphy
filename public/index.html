@@ -11,17 +11,19 @@
     <section class = "inputSec">
     <div class = "top">
         <h1 class = "title">search for GIF</h1>
-        <form action = "/" method ="post" class ="giphy-form">
+        <form class ="giphy-form">
             <label class="giphy-form__label" for="name">Name</label>
 
-            <input type="text" name = search class = "search" placeholder="Enter something"pattern="[A-Za-z]">
-            <input class="giphy-form__btn" type="submit" value="Submit"/>
+            <input type="text" name="name" id="name" class = "search" placeholder="Enter something">
+            <input class="giphy-form__btn" type="submit" id="bu" value="Submit"/>
         </form>
     </div>
     </section>
     <section class = "outputs">
+        <div id="outputs-div"> </div>
      </section>
-        
+     <!-- <script src="Giphy.js"></script> -->
+     <script src="gif-dom.js"></script>
     
 </body>
 </html>
