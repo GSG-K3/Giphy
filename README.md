@@ -1,6 +1,7 @@
 
 # Giphy
-#Our website :
+#*Our website* 
+
 https://banadora.herokuapp.com/
 
 # Who? <br>
